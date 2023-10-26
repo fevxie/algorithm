@@ -1,5 +1,8 @@
-package Sorting;
+package algorithm.sorting;
 
+/*
+* 冒泡排序
+* */
 public class BubbleSort {
     public int[] bubbleSort(int[] nums){
         for(int i=0; i<nums.length; i++){

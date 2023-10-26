@@ -1,5 +1,5 @@
-import Sorting.BubbleSort;
-import Sorting.SelectSort;
+import algorithm.sorting.BubbleSort;
+import algorithm.sorting.SelectSort;
 import org.junit.Test;
 
 import java.time.Duration;

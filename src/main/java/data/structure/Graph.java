@@ -1,5 +1,10 @@
+package data.structure;
+
 import java.util.ArrayList;
 
+/*
+* 图数据结构
+* */
 public class Graph {
     private boolean[] isVisisted;
     private ArrayList<String> vertexs;

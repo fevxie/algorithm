@@ -1,5 +1,10 @@
+package data.structure;
+
 import java.util.*;
 
+/*
+* 二叉树
+* */
 public class BinaryTree{
     private BinaryTreeNode root;
 
@@ -88,8 +93,6 @@ public class BinaryTree{
             }
 
             List<Integer> list = new ArrayList<>();
-
-
         }
 
 

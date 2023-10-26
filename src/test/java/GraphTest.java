@@ -1,3 +1,4 @@
+import data.structure.Graph;
 import org.junit.Test;
 
 public class GraphTest {
@@ -5,7 +6,7 @@ public class GraphTest {
     public void dfsTest(){
         int n=5;
         String vertexValue[] = {"A", "B", "C", "D", "E"};
-        Grap graph = new Graph(n);
+//        Grap graph = new Graph(n);
 
     }
 }

@@ -1,3 +1,8 @@
+package data.structure;
+
+/*
+*单链表
+* */
 public class SignalLinkedList {
     private int size;
     private LinkedNode head;

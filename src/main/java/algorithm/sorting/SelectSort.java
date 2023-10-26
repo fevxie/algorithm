@@ -1,7 +1,7 @@
-package Sorting;
+package algorithm.sorting;
 
 /*
-* select sorting
+* 选择排序
 * */
 public class SelectSort {
     public int[] selectSort(int[] nums){

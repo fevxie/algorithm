@@ -1,3 +1,4 @@
+import data.structure.BinaryTree;
 import org.junit.Test;
 
 public class BinaryTreeTest {

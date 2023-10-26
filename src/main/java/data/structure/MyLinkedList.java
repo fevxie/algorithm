@@ -1,5 +1,10 @@
+package data.structure;
+
 import java.util.LinkedList;
 
+/*
+* 链表
+* */
 public class MyLinkedList {
     private final MyNode head;
     private int size;

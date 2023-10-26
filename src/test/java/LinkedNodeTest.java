@@ -1,3 +1,4 @@
+import data.structure.SignalLinkedList;
 import org.junit.Test;
 
 public class LinkedNodeTest {
