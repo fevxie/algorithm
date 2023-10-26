@@ -15,6 +15,9 @@ public class Graph {
         this.isVisisted = new boolean[n];
     }
 
+    /*
+    * 深度优先遍历（DFS)
+    * */
     public void dfs(){
         for(int i=0; i<vertexs.size();i++){
             if(!isVisisted[i]){

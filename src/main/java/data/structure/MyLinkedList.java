@@ -114,6 +114,80 @@ public class MyLinkedList {
         for (int i=1; i<size; i++){
             nodes[i-1].setNext(nodes[i]);
         }
+
+    }
+
+    /*
+    * 冒泡排序
+    * */
+    public MyNode bubbleSortLinkedList(MyNode head){
+        if(head == null || head.next==null) return null;
+        MyNode cur , tail = null;
+        cur = head;
+        while (cur.next != tail ){
+            while (cur.next != tail){
+                if(cur.getData() > cur.next.getData()){
+                    int temp = cur.getData();
+                    cur.data = cur.next.data;
+                    cur.next.data = temp;
+                }
+                cur = cur.next;
+            }
+            tail = cur;
+            cur = head;
+        }
+        return head;
+    }
+
+    /*
+    * 归并排序
+    * */
+    public MyNode mergeSortLinkedList(MyNode head){
+        if(head == null || head.next==null){
+            return null;
+        }
+
+        // 查找中间节点
+        MyNode midNode = midNode(head);
+
+        MyNode rightNode = midNode.next;
+        midNode.next = null;
+
+        // 合并
+        return  null;
+
+    }
+
+    private MyNode mergeSort(MyNode head1, MyNode head2){
+        return null;
+    }
+
+    private MyNode midNode(MyNode head){
+        if(head == null || head.next == null) return  null;
+        MyNode slow = head, quick = head;
+        while (quick.next != null && quick.next.next != null){
+            slow = slow.next;
+            quick = quick.next.next;
+        }
+        return slow;
+    }
+
+    /*
+    * 链表逆序
+    * */
+    public MyNode reverseLinkedList(MyNode head){
+        if(head == null || head.next == null) {
+            return head;
+        }
+        MyNode pre = null;
+        MyNode curr = head;
+        while (curr != null){
+            MyNode next = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = next;
+        }
+        return pre;
     }
 
     public static class MyNode{
